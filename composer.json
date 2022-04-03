@@ -2,7 +2,7 @@
     "name": "external-image/local",
     "description": "image localization",
     "type": "library",
-    "license": "Apache",
+    "license": "proprietary",
     "require": {
         "php": ">=7.0"
     },
