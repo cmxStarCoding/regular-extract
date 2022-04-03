@@ -1,5 +1,5 @@
 {
-    "name": "external-image/local",
+    "name": "external-image/regular-extract",
     "description": "image localization",
     "type": "library",
     "license": "proprietary",
