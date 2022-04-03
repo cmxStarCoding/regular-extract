@@ -7,7 +7,8 @@ use Image\Local\ImageLocalInterface;
 /*
  * 富文本字符串提取图片资源路径
  */
-class RichTextExtractImageSrc implements ImageLocalInterface{
+class RichTextExtractImageSrc implements ImageLocalInterface
+{
 
     //匹配规则
     public string $pattern = '';
@@ -61,10 +62,12 @@ class RichTextExtractImageSrc implements ImageLocalInterface{
      */
     public function extractImage():self
     {
-        if(!check_is_regular($this->pattern)){
+        if( !check_is_regular($this->pattern) )
+        {
             throw new RichTextExtractImageException('this pattern valid');
         }
-        if(empty($this->patternContent)){
+        if( empty($this->patternContent) )
+        {
             throw new RichTextExtractImageException('please set patternContent');
         }
         //匹配
@@ -76,15 +79,17 @@ class RichTextExtractImageSrc implements ImageLocalInterface{
 
     /**
      * 将原始数据中的图片路径替换为本地化存贮之后的图片路径
-     * @return selfß
+     * @return self
      * @throws RichTextExtractImageException
      */
     public function replaceImageSrc():self
     {
-        if(empty($this->patternResult)) {
+        if(empty($this->patternResult))
+        {
             throw new RichTextExtractImageException('this patternResult is empty');
         }
-        if(empty($this->nowProjectHost)){
+        if(empty($this->nowProjectHost))
+        {
             throw new RichTextExtractImageException('please set nowProjectHost');
         }
         foreach ($this->patternResult as &$value){

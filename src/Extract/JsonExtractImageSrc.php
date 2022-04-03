@@ -2,7 +2,7 @@
 
 namespace Image\Local\Extract;
 
-use ImageLocalInterface;
+use Image\Local\ImageLocalInterface;
 
 /*
  * json字符串中提取图片资源路径
