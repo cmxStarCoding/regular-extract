@@ -10,6 +10,7 @@ $pattern = "/<[img|IMG].*?src=[\'|\"](.*?(?:[\.png|\.jpg]))[\'|\"].*?[\/]?>/";
 $host = '192.168.56.56:9501';
 
 try{
+
     $richTextExtractObj = new RichTextExtractImageSrc();
     $richTextExtractObj->setPattern($pattern)
         ->setPatternContent($content)
