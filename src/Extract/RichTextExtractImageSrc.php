@@ -19,7 +19,7 @@ class RichTextExtractImageSrc implements ImageLocalInterface
     //匹配结果
     public array $patternResult = [];
 
-    //当前项目host
+    //当前项目域名
     public string $nowProjectHost = '';
 
     /**
