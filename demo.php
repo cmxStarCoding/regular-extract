@@ -12,6 +12,7 @@ $host = '192.168.56.56:9501';
 try{
 
     $richTextExtractObj = new RichTextExtractImageSrc();
+    //链式调用
     $richTextExtractObj->setPattern($pattern)
         ->setPatternContent($content)
         ->setNowProjectHost($host)
