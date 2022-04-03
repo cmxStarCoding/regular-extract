@@ -1,0 +1,23 @@
+{
+    "name": "image/local",
+    "description": "image localization",
+    "type": "library",
+    "license": "Apache",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Image\\Local\\": "src/"
+        },
+        "files": [
+            "src\\Helper\\helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "cuimingxing"
+        }
+    ],
+    "minimum-stability": "dev"
+}
