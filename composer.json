@@ -1,5 +1,5 @@
 {
-    "name": "image/local",
+    "name": "external-image/local",
     "description": "image localization",
     "type": "library",
     "license": "Apache",
