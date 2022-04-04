@@ -96,7 +96,7 @@ class RichTextExtractImageSrc implements ImageLocalInterface
             //解析url
             $url = parse_url($value);
             //替换
-            $replace = sprintf('%s://%s%s',$url['scheme'] ?? '', $this->nowProjectHost, $url['path'] ?? '');
+            $replace = sprintf('%s%s', $this->nowProjectHost, $url['path'] ?? '');
             //赋值
             $this->patternContent = str_replace($value, $replace, $this->patternContent);
         }
