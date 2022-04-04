@@ -11,7 +11,7 @@ class RichTextExtractImageSrc implements ImageLocalInterface
 {
 
     //匹配规则
-    public string $pattern = '';
+    public string $pattern = "/<[img|IMG|a].*?[src|href]=[\\'|\"](.*?(?:[\\.png|\\.jpg]))[\\'|\"].*?[\\/]?>/";
 
     //匹配内容
     public string $patternContent = '';
@@ -62,10 +62,6 @@ class RichTextExtractImageSrc implements ImageLocalInterface
      */
     public function extractImage():self
     {
-        if( !check_is_regular($this->pattern) )
-        {
-            throw new RichTextExtractImageException('this pattern valid');
-        }
         if( empty($this->patternContent) )
         {
             throw new RichTextExtractImageException('please set patternContent');
