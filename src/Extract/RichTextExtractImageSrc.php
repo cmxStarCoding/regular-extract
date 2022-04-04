@@ -11,7 +11,7 @@ class RichTextExtractImageSrc implements ImageLocalInterface
 {
 
     //匹配规则
-    public string $pattern = "/<[img|IMG|a].*?[src|href]=[\\'|\"](.*?(?:[\\.png|\\.jpg]))[\\'|\"].*?[\\/]?>/";
+    public string $pattern = "/<[img|IMG|a].*[src|href]=[\\'|\"](.*?(?:[\\.png|\\.jpg]))[\\'|\"].*?[\\/]?>/";
 
     //匹配内容
     public string $patternContent = '';
